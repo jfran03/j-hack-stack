@@ -71,8 +71,6 @@ When outputs are complete:
 
 | Tool | Use case in this stage |
 |---|---|
-| Google Drive MCP | Save and share the deck, export writeup to a shared folder |
-| Notion MCP | Draft or publish the submission writeup directly to the portal page |
 
 Add or remove rows as your MCP setup changes. If a tool isn't listed here, don't use it at this stage.
 

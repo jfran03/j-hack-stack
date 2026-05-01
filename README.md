@@ -163,6 +163,22 @@ Open the folder in Claude Code. It will read `CLAUDE.md` and `shared/status.md` 
 
 These are the only human-maintained inputs the system reads before deriving anything else. Everything else is either generated during events or compiled afterward.
 
+### Privacy — files that will accumulate personal data
+
+These files are committed as empty templates. Once you start using the workspace, they fill with your team's real knowledge. If you're working in a private fork you're fine. If you ever intend to keep your fork public, consider adding some or all of these to your own `.gitignore`:
+
+```
+shared/wiki/our-team.md          # team identity, preferred stack, MCPs
+shared/wiki/judges.md            # real judge names and preferences
+shared/wiki/winning-patterns.md  # your team's observed patterns
+shared/wiki/stack-pitfalls.md    # your team's technical history
+shared/schema/provenance.md      # compile history
+shared/schema/contradictions.md  # flagged conflicts
+shared/status.md                 # active event state
+```
+
+This repo tracks them so a fresh clone has the structure. What you put in them is yours to manage.
+
 ### Running an event
 
 Tell Claude Code you're starting Stage 01 and provide the hackathon brief. The agent will walk the rest.

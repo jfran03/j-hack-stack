@@ -1,7 +1,7 @@
 # =============================================================================
 # j-hack-stack — public template repo
 # =============================================================================
-# Rule: commit structure and templates, ignore event-generated content.
+# Rule: commit structure, templates, and empty framework files. Ignore event-generated content.
 # Teams cloning this repo should work in their own private fork once they
 # start populating real events.
 # =============================================================================
@@ -23,9 +23,6 @@ shared/wiki/events/*.md
 !shared/wiki/events/_index.md
 !shared/wiki/events/_template.md
 
-# Schema logs — accumulate personal team/event data after compile steps
-shared/schema/provenance.md
-shared/schema/contradictions.md
 
 # -----------------------------------------------------------------------------
 # Secrets and environment
