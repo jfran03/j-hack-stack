@@ -1,6 +1,7 @@
 # Stack Decision
 
-> Finalize this before the first line of code. See `shared/stack-defaults.md` for team defaults.
+> Reference template — the actual stack is decided in Stage 01 and recorded in `projects/{event-slug}/CLAUDE.md`.
+> For team defaults, see `shared/wiki/our-team.md` → Preferred Stack.
 
 ## Frontend
 

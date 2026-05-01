@@ -6,14 +6,13 @@ Each event gets its own folder named by slug (e.g., `2026-05-buildathon/`).
 
 ## Recommended files per event slug
 
-| File | Contents |
-|---|---|
-| `hackathon-brief.md` | Theme, rules, judging criteria (copy from stage 01 inputs) |
-| `decisions.md` | Every irreversible decision made during the event, timestamped |
-| `post-mortem.md` | What worked, what didn't, what we'd do differently |
-| `judge-feedback.md` | Verbatim or paraphrased feedback from judges |
-| `happy-path.md` | Copy from stage 02 outputs — what actually ran in the demo |
-| `known-limitations.md` | Copy from stage 02 outputs — what was fragile or mocked |
+| File | Contents | Template |
+|---|---|---|
+| `hackathon-brief.md` | Theme, rules, judging criteria | `01-ideation-validation/inputs/hackathon-brief.md` |
+| `decisions.md` | Every irreversible decision made during the event, timestamped | — (written live by the agent) |
+| `post-mortem.md` | What worked, what didn't, what we'd do differently | `shared/sources/_templates/post-mortem.md` |
+| `judge-feedback.md` | Verbatim or paraphrased feedback from judges | `shared/sources/_templates/judge-feedback.md` |
+| `project-brief.md` | Copy of `projects/{event-slug}/CLAUDE.md` at Stage 03 gate | — (copied by the agent) |
 
 ## Rules
 

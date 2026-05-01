@@ -1,6 +1,7 @@
 # Workstream Split
 
-> Define this before building. Interface contracts prevent merge-day surprises.
+> Reference template — use during Stage 02 to clarify ownership and interface contracts between workstreams.
+> Not required by the workflow, but useful when the team is working in parallel.
 
 ## Workstreams
 

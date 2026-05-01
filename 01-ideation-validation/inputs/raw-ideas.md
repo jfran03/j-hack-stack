@@ -1,7 +1,7 @@
 # Raw Ideas
 
-> Dump everything here — no filtering, no judgment. Quantity over quality at this step.
-> Stage 01 will apply the decision filter afterward.
+> Reference template — idea capture is handled conversationally in Stage 01.
+> Use this as a scratchpad if you want to prep ideas before starting a session.
 
 ---
 

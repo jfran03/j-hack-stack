@@ -1,6 +1,7 @@
 # Team Info
 
-> Fill this in at the start of Stage 01. See also `shared/team-roster.md` for roles.
+> Reference template — team knowledge lives in `shared/wiki/our-team.md` (cross-event, compiled).
+> Use this as a scratchpad for event-specific availability or temporary role assignments.
 
 ## Team Members
 

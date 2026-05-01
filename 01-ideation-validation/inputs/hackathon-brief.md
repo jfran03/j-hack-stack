@@ -1,6 +1,7 @@
 # Hackathon Brief
 
-> Fill this in at the start of Stage 01.
+> Reference template — Stage 01 saves the actual brief to `shared/sources/{event-slug}/hackathon-brief.md`.
+> Use this as a format guide when preparing before the event.
 
 ## Event Details
 
