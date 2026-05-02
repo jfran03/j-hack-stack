@@ -14,16 +14,6 @@
 projects/*/
 !projects/_template/
 
-# All source archives except the readme
-shared/sources/*/
-!shared/sources/_readme.md
-
-# Event wiki pages except the index and template
-shared/wiki/events/*.md
-!shared/wiki/events/_index.md
-!shared/wiki/events/_template.md
-
-
 # -----------------------------------------------------------------------------
 # Secrets and environment
 # -----------------------------------------------------------------------------

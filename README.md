@@ -172,9 +172,11 @@ shared/wiki/our-team.md          # team identity, preferred stack, MCPs
 shared/wiki/judges.md            # real judge names and preferences
 shared/wiki/winning-patterns.md  # your team's observed patterns
 shared/wiki/stack-pitfalls.md    # your team's technical history
+shared/wiki/events/*.md          # per-event records and build logs
 shared/schema/provenance.md      # compile history
 shared/schema/contradictions.md  # flagged conflicts
 shared/status.md                 # active event state
+shared/sources/*/                # raw event inputs — briefs, feedback, post-mortems
 ```
 
 This repo tracks them so a fresh clone has the structure. What you put in them is yours to manage.
