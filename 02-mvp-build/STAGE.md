@@ -15,10 +15,9 @@ Read the project brief. Run V&V before the first line of code. Build inside the 
 1. Read `projects/{event-slug}/CLAUDE.md` — single source of truth for problem, user, wow moment, scope, and stack.
 2. Read `shared/wiki/stack-pitfalls.md` — know what has burned the team before. If this page is empty (first event), skip.
 3. Read `shared/wiki/events/{event-slug}.md` — this is where build progress gets logged throughout the stage.
-4. Check `projects/{event-slug}/src/`:
-   - **Does not exist** → create it. This is where the build lives.
-   - **Exists and empty** → proceed to V&V.
-   - **Exists and contains a cloned repo** → run **Cloned Repo Intake** before anything else.
+4. Check `projects/{event-slug}/{project-name}/` (the project root — **never** a `src/` wrapper):
+   - **No code files yet** → proceed to V&V, then build directly here.
+   - **Contains a cloned repo** → run **Cloned Repo Intake** before anything else.
 
 ---
 
@@ -85,6 +84,32 @@ If it fails, surface it immediately. Log it in the event wiki page. Do not build
 
 ---
 
+## Project Root Rule — NEVER VIOLATE
+
+`projects/{event-slug}/{project-name}/` is the project root. All code, config, and assets go directly inside it.
+
+**NEVER create a `src/` folder as a wrapper for the entire project.** This produces `src/src/` nesting and breaks all path assumptions.
+
+```
+CORRECT:
+{project-name}/
+├── CLAUDE.md
+├── package.json
+├── index.html
+├── api/
+└── src/        ← only if framework-conventional (e.g. Vite) and contains source files only
+
+WRONG:
+{project-name}/
+├── CLAUDE.md
+└── src/        ← ❌ entire project dumped here
+    ├── package.json
+    ├── index.html
+    └── src/    ← ❌ src/src/ nesting
+```
+
+---
+
 ## Step 4 — Build
 
 ### Computational Thinking Applied
@@ -147,7 +172,7 @@ When the happy path works end-to-end:
 
 - [ ] V&V passed and logged in event wiki page
 - [ ] If repo cloned: `repo-context.md` exists and gap confirmed
-- [ ] `projects/{event-slug}/src/` exists and runs without setup steps
+- [ ] `projects/{event-slug}/{project-name}/` exists and runs without setup steps
 - [ ] Happy path walked end-to-end at least once
 - [ ] Build Notes written in the project brief
 - [ ] Build Log in event wiki page reflects actual progress
