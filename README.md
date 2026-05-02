@@ -20,7 +20,7 @@ This workspace fixes both problems: in-event context and across-event memory.
 ## Core Concepts
 
 ### Interpretable Context Methodology (ICM)
-*Van Clief & McDermott, 2026*
+[*Van Clief & McDermott, 2026*](https://arxiv.org/abs/2603.16021)
 
 Folder structure replaces orchestration code. Each numbered stage folder contains a `STAGE.md` that defines the agent's role, its inputs, its decision rules, and its required outputs. The agent reads the folder it's in and knows what to do.
 
@@ -35,7 +35,7 @@ Folder structure replaces orchestration code. Each numbered stage folder contain
 The outputs of each stage are plain-text files that become the inputs of the next. No API calls between stages. No state management. If you can read the folder, you understand the system.
 
 ### The 60/30/10 Rule
-*Van Clief*
+*Jake Van Clief*
 
 Any tool built inside this workspace follows a ratio:
 
@@ -48,7 +48,7 @@ Any tool built inside this workspace follows a ratio:
 If you reach for an LLM call and a regex or a switch statement would do the job, use the regex. The LLM is the smallest layer, not the centerpiece. This prevents the common failure mode where "AI-powered" becomes a way of avoiding the hard engineering work.
 
 ### The Compiled Wiki
-*Karpathy analogy*
+[*Karpathy analogy*](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
 
 Knowledge that survives across hackathons should compound, not reset.
 
