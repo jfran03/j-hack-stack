@@ -14,7 +14,9 @@ j-hack-stack/
 ├── 03-pitch-deck-writeup/STAGE.md   ← role: storyteller and editor
 ├── projects/
 │   ├── _template/CLAUDE.md          ← copy this to start a new event
-│   └── {event-slug}/CLAUDE.md       ← project brief (handoff across stages)
+│   └── {event-slug}/
+│       └── {project-name}/
+│           └── CLAUDE.md            ← project brief (handoff across stages)
 └── shared/
     ├── status.md                    ← active event, current stage, last updated
     ├── time-budget.md               ← per-event time allocations
@@ -31,7 +33,7 @@ j-hack-stack/
 
 1. Read `shared/status.md`:
    - **No active event** → ask the user what they'd like to do.
-   - **Active event** → load `projects/{event-slug}/CLAUDE.md` immediately. Confirm which stage.
+   - **Active event** → load `projects/{event-slug}/{project-name}/CLAUDE.md` immediately. Confirm which stage.
    - **Paused or last-updated >24h** → surface it: *"There's a project in progress — `{slug}` at stage `{stage}`, last updated `{date}`. Continue, or close it out?"* Wait for the user's decision.
 2. Read `shared/wiki/_index.md` — surface prior knowledge. Do not re-derive what the wiki already knows.
 3. Read `0N-stage/STAGE.md` for the current stage only.
@@ -62,7 +64,7 @@ Event slug format: `YYYY-MM-{short-name}` (e.g. `2026-05-buildathon`)
 
 1. Fill Outcomes in `shared/wiki/events/{event-slug}.md`.
 2. Update `shared/status.md` → `abandoned` or `paused` with date.
-3. Archive: copy `projects/{event-slug}/CLAUDE.md` to `shared/sources/{event-slug}/project-brief.md`.
+3. Archive: copy `projects/{event-slug}/{project-name}/CLAUDE.md` to `shared/sources/{event-slug}/project-brief.md`.
 4. If abandoned: clear the active event block in `shared/status.md`.
 
 ---
