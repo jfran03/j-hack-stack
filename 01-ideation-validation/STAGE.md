@@ -53,7 +53,9 @@ Push back on vague target users ("everyone", "businesses"), on problems that req
 When the user confirms the idea is final:
 
 1. Pull the team's preferred stack from `shared/wiki/our-team.md`.
-2. Copy `projects/_template/CLAUDE.md` to `projects/{event-slug}/CLAUDE.md` and fill in all Stage 01 sections: Problem, Target User, Wow Moment, Scope, Stack.
+2. Copy `projects/_template/CLAUDE.md` to `projects/{event-slug}/CLAUDE.md` and fill in all Stage 01 sections: Problem, Target User, Wow Moment, **Spec**, Scope, Stack.
+   - **Spec — User Journey:** write the 3–5 steps a judge watches during the live demo, in order. No architecture, no edge cases — demo-path only.
+   - **Spec — Done When:** one acceptance criterion per journey step. This is the contract Stage 02 builds to; if a step has no clear done condition, the scope isn't tight enough yet.
 3. Copy `shared/wiki/events/_template.md` to `shared/wiki/events/{event-slug}.md` and fill in the Brief Summary section.
 4. Add a row to `shared/wiki/events/_index.md` for this event.
 5. Log the problem choice in `shared/sources/{event-slug}/decisions.md` with a timestamp.
@@ -90,6 +92,7 @@ Add or remove rows as your MCP setup changes. If a tool isn't listed here, don't
 - [ ] Validation passed — all three filter questions answered yes
 - [ ] User confirmed the idea is final
 - [ ] `projects/{event-slug}/CLAUDE.md` created, Stage 01 sections filled
+- [ ] Spec written — User Journey (3–5 steps, demo-order) and Done When (one criterion per step)
 - [ ] `shared/wiki/events/{event-slug}.md` created, Brief Summary filled
 - [ ] Stack pulled from wiki and recorded in the project brief
 - [ ] `shared/status.md` updated — active event set

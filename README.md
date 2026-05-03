@@ -129,7 +129,7 @@ j-hack-stack/
 
 ### The flow through an event
 
-**Stage 01** receives the brief and an idea. Runs Validation (3-question filter). On confirmation, creates `projects/{event-slug}/CLAUDE.md` (the project brief) and `shared/wiki/events/{event-slug}.md` (the live event record). Updates `shared/status.md` so any future session finds the active event automatically.
+**Stage 01** receives the brief and an idea. Runs Validation (3-question filter). On confirmation, writes the project brief — including a **Spec** section: a demo-order user journey (3–5 steps) and one acceptance criterion per step. This is the contract Stage 02 builds to. Also creates `shared/wiki/events/{event-slug}.md` (the live event record) and updates `shared/status.md` so any future session finds the active event automatically.
 
 **Stage 02** loads the project brief. Runs V&V before the first line of code. Handles cloned repo intake if the team didn't start from scratch — six questions answered before a file is read. Logs build progress to the event wiki page throughout the stage, so if context cuts off mid-build, the next session has a record. Appends build notes to the project brief at the gate.
 

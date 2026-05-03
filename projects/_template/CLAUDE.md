@@ -48,6 +48,23 @@
 
 ---
 
+## Spec
+*(written at Stage 01 gate — the contract Stage 02 builds to)*
+
+### User Journey
+*(numbered steps in demo order — 5 max)*
+1.
+2.
+3.
+
+### Done When
+*(one acceptance criterion per journey step — what "working" looks like for each)*
+1.
+2.
+3.
+
+---
+
 ## Scope
 
 ### In scope
