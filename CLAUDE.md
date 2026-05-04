@@ -76,3 +76,7 @@ Event slug format: `YYYY-MM-{short-name}` (e.g. `2026-05-buildathon`)
 3. For each page: read → integrate → flag contradictions to `shared/schema/contradictions.md`. Never silently overwrite.
 4. Log every edit to `shared/schema/provenance.md` with timestamp and authorship.
 5. Never edit a source. Sources are immutable.
+6. Update `shared/wiki/_index.md`: increment "Events compiled" count, add the slug to the list, set "Last compile" to today's date.
+7. Update `shared/wiki/events/_index.md`: confirm the event row exists and the outcome column is filled.
+8. Update `shared/status.md`: set the active event status to `completed`, update "Last significant change" with a one-line summary of what the compile added, and refresh "What to do next".
+
